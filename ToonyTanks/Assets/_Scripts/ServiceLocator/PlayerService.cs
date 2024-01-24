@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ToonyTanks
 {
-    public class PlayerService : GenericMonoSingleton<PlayerService>
+    public class PlayerService 
     {
        
     }
