@@ -7,7 +7,7 @@ namespace ToonyTanks
     public class TankSpawner : MonoBehaviour
     {
         [SerializeField] private TankView tankView;
-        // Start is called before the first frame update
+
         void Start()
         {
             SpawnTank();
@@ -15,7 +15,7 @@ namespace ToonyTanks
 
         private void SpawnTank()
         {
-            TankModel tankModel = new TankModel();
+            TankModel tankModel = new TankModel(30, 30);
             TankController tankController = new TankController(tankModel, tankView);
         }
     }
