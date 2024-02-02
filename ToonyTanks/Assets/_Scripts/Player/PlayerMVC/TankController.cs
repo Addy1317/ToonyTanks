@@ -12,9 +12,13 @@ namespace ToonyTanks
         {
             tankModel = _tankModel;
             tankView = GameObject.Instantiate<TankView>(_tankView);
+
             rb = tankView.GetRigidbody();
+
             tankModel.SetTankController(this);
-            tankView.SetTankController(this); 
+            tankView.SetTankController(this);
+
+            tankView.ChangeColor(tankModel.color);
         }       
 
         public void Move(float movement, float movementSpeed)

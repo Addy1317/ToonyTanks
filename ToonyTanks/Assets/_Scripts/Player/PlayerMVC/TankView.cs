@@ -12,6 +12,7 @@ namespace ToonyTanks
         private float movement;
 
         public Rigidbody rb;
+        public MeshRenderer[] tankMeshChilds;
 
         private void Start()
         {
@@ -52,6 +53,14 @@ namespace ToonyTanks
             if (rotation != 0)
             {
                 tankController.Rotate(rotation, tankController.GetTankModel().rotationSpeed);
+            }
+        }
+
+        public void ChangeColor(Material color)
+        {
+            for (int i = 0; i < tankMeshChilds.Length; i++)
+            {
+                tankMeshChilds[i].material = color;
             }
         }
     }

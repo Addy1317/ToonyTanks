@@ -314,7 +314,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6509105379094094208}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -335,8 +335,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6022416400619390312}
-  moveSpeed: 30
-  rotateSpeed: 30
+  tankMeshChilds:
+  - {fileID: 5508436256276261315}
+  - {fileID: 5043065596077869894}
+  - {fileID: 252004757547175340}
+  - {fileID: 4731223719227684343}
 --- !u!54 &6022416400619390312
 Rigidbody:
   m_ObjectHideFlags: 0
