@@ -44,7 +44,7 @@ namespace ToonyTanks
         }
 
         private void TankMovementChecks()
-        {
+        {  
             if (movement != 0)
             {
                 tankController.Move(movement, tankController.GetTankModel().movementSpeed);
