@@ -168,6 +168,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1197780492066941614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7239957903521249394}
+  m_Layer: 0
+  m_Name: FireTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7239957903521249394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197780492066941614}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5940449270220331967}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1259972723429992909
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,9 +327,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5940449270220331967}
-  - component: {fileID: 3987005930646766159}
   - component: {fileID: 6022416400619390312}
   - component: {fileID: 252781027024333822}
+  - component: {fileID: 3987005930646766159}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -320,26 +351,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7383197668937365435}
+  - {fileID: 7239957903521249394}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3987005930646766159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6509105379094094208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 251bdc1cd3004b647b8b97bdf0447d40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 6022416400619390312}
-  tankMeshChilds:
-  - {fileID: 5508436256276261315}
-  - {fileID: 5043065596077869894}
-  - {fileID: 252004757547175340}
-  - {fileID: 4731223719227684343}
 --- !u!54 &6022416400619390312
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -388,6 +402,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5902487, y: 1.9336662, z: 2.244079}
   m_Center: {x: 0.0053660274, y: 0.9283004, z: 0.008515775}
+--- !u!114 &3987005930646766159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6509105379094094208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 251bdc1cd3004b647b8b97bdf0447d40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 6022416400619390312}
+  tankMeshChilds:
+  - {fileID: 5508436256276261315}
+  - {fileID: 5043065596077869894}
+  - {fileID: 252004757547175340}
+  - {fileID: 4731223719227684343}
 --- !u!1 &7431640895426348330
 GameObject:
   m_ObjectHideFlags: 0
