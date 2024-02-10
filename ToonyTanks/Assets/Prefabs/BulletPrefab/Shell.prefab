@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8131442915389706885}
   - component: {fileID: 9049068359242936451}
   - component: {fileID: 4146390737333445222}
-  - component: {fileID: 7929680489480353230}
   - component: {fileID: 6615782405338306098}
   - component: {fileID: 2104036818568024431}
+  - component: {fileID: 7436810759866800938}
   m_Layer: 0
   m_Name: Shell
   m_TagString: Untagged
@@ -86,18 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7929680489480353230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4045013652243841864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b9e414ad5daf0c4f9f414ddff64bf62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &6615782405338306098
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -148,3 +136,16 @@ CapsuleCollider:
   m_Height: 0.5586964
   m_Direction: 2
   m_Center: {x: -0.0035487413, y: 0, z: 0.14631552}
+--- !u!114 &7436810759866800938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4045013652243841864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3c5b0ef06d858478fc0a569359eab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tankShooting: {fileID: 3043988468628454257, guid: 35180107f16efa84a800e68955dc810f, type: 3}
